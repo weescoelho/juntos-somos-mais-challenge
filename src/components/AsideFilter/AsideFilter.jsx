@@ -46,7 +46,7 @@ const AsideFilter = ({
   ];
 
   return (
-    <aside>
+    <aside className={styles.asideFilter}>
       <div className={styles.genderFilter}>
         <h2 className={styles.title}>Por gênero</h2>
         <CheckBoxInput

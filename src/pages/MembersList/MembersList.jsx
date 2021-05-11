@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination/Pagination";
 
 const MembersList = () => {
   const [genderFilter, setGenderFilter] = React.useState("all");
-  const [stateFilter, setStateFilter] = React.useState('all')
+  const [stateFilter, setStateFilter] = React.useState("all");
   const [dataMember, setDataMember] = React.useState("");
   const [currentPage, setCurrentPage] = React.useState(1);
   const [postsPerPage, setPostsPerPage] = React.useState(9);
@@ -51,16 +51,22 @@ const MembersList = () => {
           stateFilter={stateFilter}
           setStateFilter={setStateFilter}
         />
-        <section className={styles.membersList}>
-          {currentPosts &&
-            currentPosts.map((data) => <MemberCard data={data} />)}
+        <section>
+          <div className={styles.membersListHeader}>
+            <h1 className={styles.title}>Lista de membros</h1>
+            <p>Home {'>'} Usuários {'>'} Detalhes</p>
+          </div>
+          <div className={styles.membersList}>
+            {currentPosts &&
+              currentPosts.map((data) => <MemberCard data={data} />)}
+          </div>
         </section>
       </main>
       <Pagination
-          postsPerPage={postsPerPage}
-          totalPosts={dataMember.length}
-          paginate={paginate}
-        />
+        postsPerPage={postsPerPage}
+        totalPosts={dataMember.length}
+        paginate={paginate}
+      />
     </div>
   );
 };

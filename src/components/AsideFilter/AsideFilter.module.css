@@ -1,3 +1,9 @@
+.asideFilter{
+  border: 1px solid #eee;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
 .genderFilter{
   display: flex;
   flex-direction: column;
@@ -10,9 +16,10 @@
 }
 
 .title{
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 14px;
   font-size:2rem;
+  color:#222D39;
 }
 
 label{
