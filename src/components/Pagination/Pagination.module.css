@@ -1,0 +1,29 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.pagination ul{
+  display: flex;
+  text-align: center;
+}
+
+.pagination ul a::after.active{
+  content:'';
+  display: block;
+  width: 32px;
+  height: 4px;
+  border-radius: 9px;
+  background: #9B9B9B;
+}
+
+.pagination ul a{
+  text-decoration: none;
+  color:#9B9B9B;
+  font-weight: bold;
+  font-size:1.6rem;
+}
+
+.pagination li {
+  padding: 1rem;
+}

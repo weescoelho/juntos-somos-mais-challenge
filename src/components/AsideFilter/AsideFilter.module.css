@@ -1,0 +1,21 @@
+.genderFilter{
+  display: flex;
+  flex-direction: column;
+}
+
+.stateFilter{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size:2rem;
+}
+
+label{
+  margin-bottom: 8px;
+  font-size:1.6rem
+}
